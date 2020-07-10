@@ -12,7 +12,6 @@ So friendship is twice stronger than love :-)
 The input will always be in lowercase and never be empty.
 """
 
-
 def words_to_marks(word):
     """
     >>> words_to_marks('attitude')
@@ -31,5 +30,4 @@ def words_to_marks(word):
 
 if __name__ == '__main__':
     import doctest
-
     doctest.testmod()

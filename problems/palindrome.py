@@ -6,7 +6,6 @@ reads the same backward or forward. This includes capital letters, punctuation,
 and word dividers.
 """
 
-
 def is_palindrome(string):
     """
     >>> is_palindrome('anna')
@@ -40,5 +39,4 @@ def is_palindrome_ingoring_case_and_non_letter_chars(text):
 
 if __name__ == '__main__':
     import doctest
-
     doctest.testmod()
