@@ -8,7 +8,7 @@ def timer(func):
     def inner(*args, **kwargs):
         start = time.time()
         result = func(*args, **kwargs)
-        print time.time() - start
+        print(time.time() - start)
         return result
     return inner
 
@@ -47,12 +47,11 @@ def main(*links):
 if __name__ == '__main__':
     links = ('http://vojnaimir.ru/files/book1.txt', 'http://vojnaimir.ru/files/book2.txt')
 
-    print 'Serial',
+    print('Serial'),
     main(*links)
 
-    print 'Threads',
+    print('Threads'),
     main_threading(*links)
 
-    print 'Gevent',
+    print('Gevent'),
     main_gevent(*links)
-
